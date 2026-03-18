@@ -1,0 +1,711 @@
+2026-03-18 04:37:36,437 INFO SPADE: SPADE XMPP server running on localhost:5222
+2026-03-18 04:37:36,437 INFO System: 
+╔══════════════════════════════════════════════════════════════╗
+║      SMART HOSPITAL TRIAGE AGENT SYSTEM                     ║
+║      DCIT 403 — Intelligent Agent Systems           ║
+║      Designed using Prometheus AOSE Methodology             ║
+╚══════════════════════════════════════════════════════════════╝
+2026-03-18 04:37:36,437 INFO System: 
+────────────────────────────────────────────────────────────────
+2026-03-18 04:37:36,437 INFO System: [Setup] Initialising EMR database...
+2026-03-18 04:37:36,441 INFO EMR: [EMR] Database initialised with 14 beds.
+2026-03-18 04:37:36,441 INFO System: [Setup] Starting agents...
+
+2026-03-18 04:37:36,613 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x78b1013f7da0>
+transport: <TCPTransport closed=False reading=False 0x5d1d76497090>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:37:37,176 INFO slixmpp.features.feature_bind.bind: JID set to: resource@localhost/40ccd3c8-c191-4cf9-ba53-ea6a9cc444a6
+2026-03-18 04:37:37,180 INFO spade.Agent: Agent resource@localhost connected and authenticated.
+2026-03-18 04:37:37,180 INFO ResourceAgent: [ResourceAgent] Online. Bed registry loaded.
+2026-03-18 04:37:37,368 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x78b103859610>
+transport: <TCPTransport closed=False reading=False 0x5d1d7666a7f0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:37:37,956 INFO slixmpp.features.feature_bind.bind: JID set to: notification@localhost/48383c97-1517-48aa-9bd0-42cf0db39a03
+2026-03-18 04:37:37,958 INFO spade.Agent: Agent notification@localhost connected and authenticated.
+2026-03-18 04:37:37,958 INFO NotificationAgent: [NotifAgent] Online. Staff routing table loaded.
+2026-03-18 04:37:38,084 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x78b10127a600>
+transport: <TCPTransport closed=False reading=False 0x5d1d767d5580>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:37:38,622 INFO slixmpp.features.feature_bind.bind: JID set to: monitor@localhost/6ac85cee-20a0-4cd9-8e10-95a196793c49
+2026-03-18 04:37:38,623 INFO spade.Agent: Agent monitor@localhost connected and authenticated.
+2026-03-18 04:37:38,624 INFO MonitorAgent: [MonitorAgent] Online. Watching for deterioration...
+2026-03-18 04:37:38,689 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:38,790 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:38,891 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:38,991 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,092 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,192 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,293 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x78b10127b8c0>
+transport: <TCPTransport closed=False reading=False 0x5d1d7693f8f0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:37:39,294 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,395 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,495 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,596 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,697 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,797 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,898 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:39,999 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,099 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,200 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,301 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,402 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,503 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,604 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,705 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,807 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:40,907 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:41,008 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:41,109 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:41,210 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:41,310 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:41,411 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:41,512 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:41,614 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:41,715 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:42,076 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:42,177 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:42,278 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:42,646 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:42,747 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:42,848 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:42,949 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,050 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,151 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,252 INFO slixmpp.features.feature_bind.bind: JID set to: triage@localhost/ca19a5dd-0be1-4e22-9ca8-7457476a8d5f
+2026-03-18 04:37:43,253 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,354 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,455 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,557 INFO spade.Agent: Agent triage@localhost connected and authenticated.
+2026-03-18 04:37:43,557 INFO TriageAgent: [TriageAgent] Online. Waiting for patients...
+2026-03-18 04:37:43,616 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,717 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,817 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:43,918 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,019 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,119 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,220 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x78b1012af530>
+transport: <TCPTransport closed=False reading=False 0x5d1d76aad5b0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:37:44,221 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,322 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,422 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,523 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,623 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,724 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,825 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:44,926 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,027 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,127 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,228 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,329 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,430 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,531 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,632 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,736 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,837 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:45,938 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:46,039 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:46,140 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:46,240 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:46,341 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:46,442 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:46,543 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:46,643 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:47,009 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:47,110 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:47,211 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:47,601 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:47,702 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:47,803 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:47,904 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,005 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,106 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,207 INFO slixmpp.features.feature_bind.bind: JID set to: controller@localhost/e3f346a3-a467-4348-9ca4-d8f066a12978
+2026-03-18 04:37:48,208 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,309 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,410 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,510 INFO spade.Agent: Agent controller@localhost connected and authenticated.
+2026-03-18 04:37:48,511 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,611 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,712 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,812 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:48,913 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,014 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,114 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,215 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,315 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,416 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,516 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,616 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,717 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,818 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:49,918 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,019 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,119 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,219 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,320 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,420 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,521 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,621 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,722 INFO ControllerAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 04:37:50,722 INFO ControllerAgent: [Demo] All 4 agents online. Sending patient scenarios...
+2026-03-18 04:37:50,722 INFO ControllerAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 04:37:50,722 INFO ControllerAgent: [Controller] ─── Registering patient P001 ───
+2026-03-18 04:37:50,722 INFO ControllerAgent: [Controller] ─── Registering patient P002 ───
+2026-03-18 04:37:50,722 INFO ControllerAgent: [Controller] ─── Registering patient P003 ───
+2026-03-18 04:37:50,722 INFO ControllerAgent: [Controller] ─── Registering patient P004 ───
+2026-03-18 04:37:50,723 INFO ControllerAgent: [Controller] ─── Registering patient P005 ───
+2026-03-18 04:37:50,723 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,825 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:50,926 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:37:51,026 INFO ControllerAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 04:37:51,027 INFO ControllerAgent: [Interactive] You can now admit new patients interactively.
+2026-03-18 04:37:51,027 INFO ControllerAgent: Type 'exit' as patient ID to finish and see the summary.
+2026-03-18 04:37:51,027 INFO ControllerAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 04:38:28,276 ERROR ControllerAgent: [Error] Invalid input: could not convert string to float: ''
+2026-03-18 04:38:34,876 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:36,580 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:38,307 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:40,223 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:41,314 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:41,535 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:41,757 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:41,997 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:42,195 ERROR ControllerAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 04:38:47,502 INFO ControllerAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 04:38:47,502 INFO ControllerAgent: FINAL TRIAGE SUMMARY — EMR LOG
+2026-03-18 04:38:47,502 INFO ControllerAgent: ────────────────────────────────────────────────────────────────
+2026-03-18 04:38:47,503 INFO ControllerAgent:   (No records yet)
+2026-03-18 04:38:47,503 INFO ControllerAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 04:38:47,503 INFO ControllerAgent: Prometheus artifacts demonstrated:
+2026-03-18 04:38:47,503 INFO ControllerAgent:   ✓ Phase 1 — Percepts (vitals) + Actions (bed alloc, alerts)
+2026-03-18 04:38:47,503 INFO ControllerAgent:   ✓ Phase 2 — 4 agents communicating via FIPA-ACL messages
+2026-03-18 04:38:47,503 INFO ControllerAgent:   ✓ Phase 2 — Acquaintance: Triage↔Resource↔Monitor↔Notif
+2026-03-18 04:38:47,503 INFO ControllerAgent:   ✓ Phase 3 — Percept→Decide→Act loop in TriageAgent output
+2026-03-18 04:38:47,503 INFO ControllerAgent:   ✓ Phase 3 — Belief revision via MonitorAgent deterioration
+2026-03-18 04:38:47,504 INFO ControllerAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 04:38:47,504 INFO spade.behaviour: Killing behavior OneShotBehaviour/RunDemoBehaviour with exit code: None
+2026-03-18 04:38:47,504 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:47,607 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:47,708 INFO TriageAgent: [TriageAgent] ── PERCEIVE ── Patient P001 arrived: Cardiac arrest, unresponsive
+2026-03-18 04:38:47,712 INFO TriageAgent:   HR=155 SpO2=82% BP=65 RR=38 Temp=38.2°C
+2026-03-18 04:38:47,712 INFO TriageAgent: [TriageAgent] ── DECIDE ── ESI rules fired → IMMEDIATE (ESI-1)
+2026-03-18 04:38:47,712 INFO TriageAgent:   Target ward: Resus | Escalate: True
+2026-03-18 04:38:47,712 INFO TriageAgent: [TriageAgent] ── ACT ──────────────────────
+2026-03-18 04:38:47,712 INFO TriageAgent:   → REQUEST bed in Resus for P001
+2026-03-18 04:38:47,712 INFO TriageAgent:   → SUBSCRIBE MonitorAgent for P001
+2026-03-18 04:38:47,713 ERROR asyncio: Fatal error on SSL protocol
+protocol: <uvloop.loop.SSLProtocol object at 0x78b101419900>
+transport: <TCPTransport closed=False reading=False 0x5d1d76a94fe0>
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 711, in uvloop.loop.SSLProtocol._do_read
+  File "uvloop/sslproto.pyx", line 791, in uvloop.loop.SSLProtocol._do_read__copied
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+  File "./Modules/pyexpat.c", line 416, in StartElement
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 363, in start_element_ns
+    self._cont_handler.startElementNS(pair, None,
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLParser.py", line 67, in startElementNS
+    raise Exception()
+Exception
+2026-03-18 04:38:47,729 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:47,831 INFO TriageAgent: [TriageAgent] ── PERCEIVE ── Patient P002 arrived: Chest pain, shortness of breath
+2026-03-18 04:38:47,831 INFO TriageAgent:   HR=125 SpO2=89% BP=88 RR=24 Temp=38.8°C
+2026-03-18 04:38:47,831 INFO TriageAgent: [TriageAgent] ── DECIDE ── ESI rules fired → EMERGENT  (ESI-2)
+2026-03-18 04:38:47,831 INFO TriageAgent:   Target ward: ICU | Escalate: True
+2026-03-18 04:38:47,831 INFO TriageAgent: [TriageAgent] ── ACT ──────────────────────
+2026-03-18 04:38:47,831 INFO TriageAgent:   → REQUEST bed in ICU for P002
+2026-03-18 04:38:47,832 INFO TriageAgent:   → SUBSCRIBE MonitorAgent for P002
+2026-03-18 04:38:47,832 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 04:38:47,832 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 04:38:47,833 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 04:38:47,833 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 04:38:47,833 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:47,934 INFO TriageAgent: [TriageAgent] ── PERCEIVE ── Patient P003 arrived: Right leg fracture after fall
+2026-03-18 04:38:47,934 INFO TriageAgent:   HR=112 SpO2=93% BP=110 RR=20 Temp=38.6°C
+2026-03-18 04:38:47,934 INFO TriageAgent: [TriageAgent] ── DECIDE ── ESI rules fired → URGENT    (ESI-3)
+2026-03-18 04:38:47,934 INFO TriageAgent:   Target ward: Acute | Escalate: False
+2026-03-18 04:38:47,934 INFO TriageAgent: [TriageAgent] ── ACT ──────────────────────
+2026-03-18 04:38:47,934 INFO TriageAgent:   → REQUEST bed in Acute for P003
+2026-03-18 04:38:47,935 INFO TriageAgent:   → SUBSCRIBE MonitorAgent for P003
+2026-03-18 04:38:47,935 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 04:38:47,935 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:48,036 INFO ResourceAgent: [ResourceAgent] ── PERCEIVE ── Bed REQUEST for P001 | ESI-1 | Ward: Resus
+2026-03-18 04:38:48,036 INFO ResourceAgent: [ResourceAgent] ── DECIDE ──
+2026-03-18 04:38:48,036 INFO ResourceAgent:   Available bed found: Resus-01 in Resus
+2026-03-18 04:38:48,037 INFO ResourceAgent: [ResourceAgent] ── ACT ──────────────────────
+2026-03-18 04:38:48,038 INFO ResourceAgent:   → CONFIRM: Resus-01 allocated to P001
+2026-03-18 04:38:48,038 INFO MonitorAgent: [MonitorAgent] Subscribed to P001 (now watching 1 patients)
+2026-03-18 04:38:48,038 INFO TriageAgent: [TriageAgent] ── PERCEIVE ── Patient P004 arrived: Sore throat and mild fever
+2026-03-18 04:38:48,038 INFO TriageAgent:   HR=98 SpO2=97% BP=130 RR=17 Temp=37.8°C
+2026-03-18 04:38:48,039 INFO TriageAgent: [TriageAgent] ── DECIDE ── ESI rules fired → LESS URG  (ESI-4)
+2026-03-18 04:38:48,039 INFO TriageAgent:   Target ward: General | Escalate: False
+2026-03-18 04:38:48,039 INFO TriageAgent: [TriageAgent] ── ACT ──────────────────────
+2026-03-18 04:38:48,039 INFO TriageAgent:   → REQUEST bed in General for P004
+2026-03-18 04:38:48,039 INFO TriageAgent:   → SUBSCRIBE MonitorAgent for P004
+2026-03-18 04:38:48,039 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:48,140 INFO ResourceAgent: [ResourceAgent] ── PERCEIVE ── Bed REQUEST for P002 | ESI-2 | Ward: ICU
+2026-03-18 04:38:48,141 INFO ResourceAgent: [ResourceAgent] ── DECIDE ──
+2026-03-18 04:38:48,141 INFO ResourceAgent:   Available bed found: ICU-01 in ICU
+2026-03-18 04:38:48,141 INFO ResourceAgent: [ResourceAgent] ── ACT ──────────────────────
+2026-03-18 04:38:48,143 INFO ResourceAgent:   → CONFIRM: ICU-01 allocated to P002
+2026-03-18 04:38:48,143 INFO MonitorAgent: [MonitorAgent] Subscribed to P002 (now watching 2 patients)
+2026-03-18 04:38:48,143 INFO TriageAgent: [TriageAgent] ── PERCEIVE ── Patient P005 arrived: Minor cut on finger, no active bleeding
+2026-03-18 04:38:48,144 INFO TriageAgent:   HR=72 SpO2=99% BP=120 RR=15 Temp=36.8°C
+2026-03-18 04:38:48,144 INFO TriageAgent: [TriageAgent] ── DECIDE ── ESI rules fired → NON-URG   (ESI-5)
+2026-03-18 04:38:48,144 INFO TriageAgent:   Target ward: Waiting | Escalate: False
+2026-03-18 04:38:48,144 INFO TriageAgent: [TriageAgent] ── ACT ──────────────────────
+2026-03-18 04:38:48,144 INFO TriageAgent:   → REQUEST bed in Waiting for P005
+2026-03-18 04:38:48,144 INFO TriageAgent:   → SUBSCRIBE MonitorAgent for P005
+2026-03-18 04:38:48,144 INFO spade.Agent: Client disconnected.
+2026-03-18 04:38:48,145 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:48,245 INFO ResourceAgent: [ResourceAgent] ── PERCEIVE ── Bed REQUEST for P003 | ESI-3 | Ward: Acute
+2026-03-18 04:38:48,245 INFO ResourceAgent: [ResourceAgent] ── DECIDE ──
+2026-03-18 04:38:48,246 INFO ResourceAgent:   Available bed found: Acute-01 in Acute
+2026-03-18 04:38:48,246 INFO ResourceAgent: [ResourceAgent] ── ACT ──────────────────────
+2026-03-18 04:38:48,247 INFO ResourceAgent:   → CONFIRM: Acute-01 allocated to P003
+2026-03-18 04:38:48,247 INFO MonitorAgent: [MonitorAgent] Subscribed to P003 (now watching 3 patients)
+2026-03-18 04:38:48,247 INFO TriageAgent: [TriageAgent] Bed confirmed for P001: Resus-01 in Resus
+2026-03-18 04:38:48,248 INFO TriageAgent: [TriageAgent] → INFORM NotificationAgent (ESI-1, Resus-01)
+2026-03-18 04:38:48,250 INFO TriageAgent: [TriageAgent] → Updated EMR record
+2026-03-18 04:38:48,252 INFO spade.behaviour: Killing behavior OneShotBehaviour/RunDemoBehaviour with exit code: None
+2026-03-18 04:38:48,252 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:48,352 INFO ResourceAgent: [ResourceAgent] ── PERCEIVE ── Bed REQUEST for P004 | ESI-4 | Ward: General
+2026-03-18 04:38:48,353 INFO ResourceAgent: [ResourceAgent] ── DECIDE ──
+2026-03-18 04:38:48,353 INFO ResourceAgent:   Available bed found: Gen-01 in General
+2026-03-18 04:38:48,354 INFO ResourceAgent: [ResourceAgent] ── ACT ──────────────────────
+2026-03-18 04:38:48,355 INFO ResourceAgent:   → CONFIRM: Gen-01 allocated to P004
+2026-03-18 04:38:48,355 INFO MonitorAgent: [MonitorAgent] Subscribed to P004 (now watching 4 patients)
+2026-03-18 04:38:48,356 INFO TriageAgent: [TriageAgent] Bed confirmed for P002: ICU-01 in ICU
+2026-03-18 04:38:48,356 INFO TriageAgent: [TriageAgent] → INFORM NotificationAgent (ESI-2, ICU-01)
+2026-03-18 04:38:48,358 INFO TriageAgent: [TriageAgent] → Updated EMR record
+2026-03-18 04:38:48,358 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:48,458 INFO ResourceAgent: [ResourceAgent] ── PERCEIVE ── Bed REQUEST for P005 | ESI-5 | Ward: Waiting
+2026-03-18 04:38:48,459 INFO ResourceAgent: [ResourceAgent] ── DECIDE ──
+2026-03-18 04:38:48,459 INFO ResourceAgent:   Available bed found: Wait-01 in Waiting
+2026-03-18 04:38:48,460 INFO ResourceAgent: [ResourceAgent] ── ACT ──────────────────────
+2026-03-18 04:38:48,461 INFO ResourceAgent:   → CONFIRM: Wait-01 allocated to P005
+2026-03-18 04:38:48,461 INFO MonitorAgent: [MonitorAgent] Subscribed to P005 (now watching 5 patients)
+2026-03-18 04:38:48,461 INFO TriageAgent: [TriageAgent] Bed confirmed for P003: Acute-01 in Acute
+2026-03-18 04:38:48,462 INFO TriageAgent: [TriageAgent] → INFORM NotificationAgent (ESI-3, Acute-01)
+2026-03-18 04:38:48,463 INFO TriageAgent: [TriageAgent] → Updated EMR record
+2026-03-18 04:38:48,463 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:48,564 INFO NotificationAgent: [NotifAgent] ── PERCEIVE + DECIDE ── Triage result for P001: IMMEDIATE (ESI-1)
+2026-03-18 04:38:48,565 INFO NotificationAgent:   Condition matched → Route to: Charge Nurse + Resus Team
+2026-03-18 04:38:48,565 INFO NotificationAgent: [NotifAgent] ── ACT ─────────────────────
+2026-03-18 04:38:48,565 INFO NotificationAgent:   → ALERT sent to Charge Nurse + Resus Team
+2026-03-18 04:38:48,565 INFO NotificationAgent:   → Message: PATIENT P001 | IMMEDIATE (ESI-1) | Bed: Resus-01 (Resus) | CRITICAL — IMMEDIATE RESPONSE REQUIRED
+2026-03-18 04:38:48,567 INFO NotificationAgent: [NotifAgent] → Alert logged to EMR
+2026-03-18 04:38:48,567 INFO TriageAgent: [TriageAgent] Bed confirmed for P004: Gen-01 in General
+2026-03-18 04:38:48,567 INFO TriageAgent: [TriageAgent] → INFORM NotificationAgent (ESI-4, Gen-01)
+2026-03-18 04:38:48,568 INFO TriageAgent: [TriageAgent] → Updated EMR record
+2026-03-18 04:38:48,569 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:48,670 INFO NotificationAgent: [NotifAgent] ── PERCEIVE + DECIDE ── Triage result for P002: EMERGENT  (ESI-2)
+2026-03-18 04:38:48,670 INFO NotificationAgent:   Condition matched → Route to: Duty Doctor + ICU Nurse
+2026-03-18 04:38:48,670 INFO NotificationAgent: [NotifAgent] ── ACT ─────────────────────
+2026-03-18 04:38:48,671 INFO NotificationAgent:   → ALERT sent to Duty Doctor + ICU Nurse
+2026-03-18 04:38:48,671 INFO NotificationAgent:   → Message: PATIENT P002 | EMERGENT  (ESI-2) | Bed: ICU-01 (ICU) | URGENT — respond within 10 minutes
+2026-03-18 04:38:48,675 INFO NotificationAgent: [NotifAgent] → Alert logged to EMR
+2026-03-18 04:38:48,675 INFO TriageAgent: [TriageAgent] Bed confirmed for P005: Wait-01 in Waiting
+2026-03-18 04:38:48,675 INFO TriageAgent: [TriageAgent] → INFORM NotificationAgent (ESI-5, Wait-01)
+2026-03-18 04:38:48,682 INFO TriageAgent: [TriageAgent] → Updated EMR record
+2026-03-18 04:38:48,683 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:38:48,784 INFO NotificationAgent: [NotifAgent] ── PERCEIVE + DECIDE ── Triage result for P003: URGENT    (ESI-3)
+2026-03-18 04:38:48,785 INFO NotificationAgent:   Condition matched → Route to: Ward Doctor
+2026-03-18 04:38:48,787 INFO NotificationAgent: [NotifAgent] ── ACT ─────────────────────
+2026-03-18 04:38:48,787 INFO NotificationAgent:   → ALERT sent to Ward Doctor
+2026-03-18 04:38:48,787 INFO NotificationAgent:   → Message: PATIENT P003 | URGENT    (ESI-3) | Bed: Acute-01 (Acute) | URGENT — respond within 30 minutes
+2026-03-18 04:38:48,790 INFO NotificationAgent: [NotifAgent] → Alert logged to EMR
+2026-03-18 04:38:48,792 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceivePatientBehaviour with exit code: None
+2026-03-18 04:38:48,793 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveBedConfirmBehaviour with exit code: None
+2026-03-18 04:38:48,793 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveDeteriorationBehaviour with exit code: None
+2026-03-18 04:38:48,794 INFO spade.Agent: Client disconnected.
+2026-03-18 04:38:48,794 INFO spade.behaviour: Killing behavior CyclicBehaviour/BedAllocationBehaviour with exit code: None
+2026-03-18 04:38:48,794 INFO spade.Agent: Client disconnected.
+2026-03-18 04:38:48,794 INFO spade.behaviour: Killing behavior CyclicBehaviour/AlertBehaviour with exit code: None
+2026-03-18 04:38:48,794 INFO spade.Agent: Client disconnected.
+2026-03-18 04:38:48,795 INFO spade.behaviour: Killing behavior CyclicBehaviour/SubscribeBehaviour with exit code: None
+2026-03-18 04:38:48,795 INFO spade.behaviour: Killing behavior PeriodicBehaviour/CheckVitalsBehaviour with exit code: None
+2026-03-18 04:38:48,795 INFO spade.behaviour: Killing behavior CyclicBehaviour/ManualUpdateBehaviour with exit code: None
+2026-03-18 04:38:48,795 INFO spade.Agent: Client disconnected.
+2026-03-18 04:38:48,795 INFO spade.behaviour: Killing behavior CyclicBehaviour/ManualUpdateBehaviour with exit code: None
+2026-03-18 04:38:48,795 INFO spade.behaviour: Killing behavior CyclicBehaviour/AlertBehaviour with exit code: None
+2026-03-18 04:38:48,795 INFO spade.behaviour: Killing behavior CyclicBehaviour/BedAllocationBehaviour with exit code: None
+2026-03-18 04:38:48,805 INFO spade.behaviour: Killing behavior CyclicBehaviour/SubscribeBehaviour with exit code: None
+2026-03-18 04:38:48,807 INFO spade.behaviour: Killing behavior PeriodicBehaviour/CheckVitalsBehaviour with exit code: None
+2026-03-18 04:38:48,808 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceivePatientBehaviour with exit code: None
+2026-03-18 04:38:48,809 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveBedConfirmBehaviour with exit code: None
+2026-03-18 04:38:48,809 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveDeteriorationBehaviour with exit code: None
+2026-03-18 04:38:48,813 INFO spade.behaviour: Killing behavior CyclicBehaviour/BedAllocationBehaviour with exit code: None
+2026-03-18 04:38:48,818 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceivePatientBehaviour with exit code: None
+2026-03-18 04:38:48,821 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveBedConfirmBehaviour with exit code: None
+2026-03-18 04:38:48,821 INFO spade.behaviour: Killing behavior PeriodicBehaviour/CheckVitalsBehaviour with exit code: None
+2026-03-18 04:38:48,822 INFO spade.behaviour: Killing behavior CyclicBehaviour/SubscribeBehaviour with exit code: None
+2026-03-18 04:38:48,822 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveDeteriorationBehaviour with exit code: None
+2026-03-18 04:42:02,806 INFO SPADE: SPADE XMPP server running on localhost:5222
+2026-03-18 04:42:02,807 INFO System: 
+╔══════════════════════════════════════════════════════════════╗
+║      SMART HOSPITAL TRIAGE AGENT SYSTEM                     ║
+║      DCIT 403 — Intelligent Agent Systems           ║
+║      Designed using Prometheus AOSE Methodology             ║
+╚══════════════════════════════════════════════════════════════╝
+2026-03-18 04:42:02,807 INFO System: 
+────────────────────────────────────────────────────────────────
+2026-03-18 04:42:02,807 INFO System: [Setup] Initialising EMR database...
+2026-03-18 04:42:02,811 INFO EMR: [EMR] Database initialised with 14 beds.
+2026-03-18 04:42:02,811 INFO System: [Setup] Starting agents...
+
+2026-03-18 04:42:02,901 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7daf552dfbc0>
+transport: <TCPTransport closed=False reading=False 0x5d91d484e0e0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:42:03,463 INFO slixmpp.features.feature_bind.bind: JID set to: resource@localhost/96f0f0ce-f1a6-4576-aea9-e11609e1546f
+2026-03-18 04:42:03,465 INFO spade.Agent: Agent resource@localhost connected and authenticated.
+2026-03-18 04:42:03,465 INFO ResourceAgent: [ResourceAgent] Online. Bed registry loaded.
+2026-03-18 04:42:03,534 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7daf5773d3d0>
+transport: <TCPTransport closed=False reading=False 0x5d91d4a20b00>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:42:04,085 INFO slixmpp.features.feature_bind.bind: JID set to: notification@localhost/ab68d1f7-7d4a-4261-b678-74ee800bb99a
+2026-03-18 04:42:04,086 INFO spade.Agent: Agent notification@localhost connected and authenticated.
+2026-03-18 04:42:04,087 INFO NotificationAgent: [NotifAgent] Online. Staff routing table loaded.
+2026-03-18 04:42:04,160 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7daf55162600>
+transport: <TCPTransport closed=False reading=False 0x5d91d4b8bac0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:42:04,701 INFO slixmpp.features.feature_bind.bind: JID set to: monitor@localhost/b0589ebe-7bc1-4138-ba42-cf28eecc0b01
+2026-03-18 04:42:04,702 INFO spade.Agent: Agent monitor@localhost connected and authenticated.
+2026-03-18 04:42:04,702 INFO MonitorAgent: [MonitorAgent] Online. Watching for deterioration...
+2026-03-18 04:42:04,761 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:04,862 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:04,962 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,063 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,164 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,264 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,366 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7daf55197d10>
+transport: <TCPTransport closed=False reading=False 0x5d91d4cf5cd0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:42:05,366 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,467 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,568 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,670 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,770 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,871 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:05,972 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,073 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,173 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,274 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,375 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,475 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,576 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,677 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,778 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,880 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:06,980 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:07,081 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:07,182 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:07,283 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:07,384 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:07,485 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:07,586 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:07,687 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:07,787 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:08,148 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:08,249 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:08,350 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:08,717 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:08,817 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:08,918 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,019 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,120 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,221 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,322 INFO slixmpp.features.feature_bind.bind: JID set to: triage@localhost/9135fedc-9719-49d8-b574-b20b6fdc1317
+2026-03-18 04:42:09,322 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,423 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,524 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,624 INFO spade.Agent: Agent triage@localhost connected and authenticated.
+2026-03-18 04:42:09,625 INFO TriageAgent: [TriageAgent] Online. Waiting for patients...
+2026-03-18 04:42:09,685 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,788 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,889 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:09,989 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,090 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,191 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,292 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7daf551b12e0>
+transport: <TCPTransport closed=False reading=False 0x5d91d4e639a0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 04:42:10,292 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,393 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,493 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,594 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,694 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,795 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,896 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:10,996 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,097 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,198 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,299 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,399 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,500 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,600 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,702 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,803 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:11,904 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:12,005 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:12,106 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:12,207 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:12,308 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:12,409 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:12,510 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:12,611 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:12,711 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:13,094 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:13,195 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:13,296 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:13,657 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:13,758 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:13,859 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:13,960 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,061 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,162 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,264 INFO slixmpp.features.feature_bind.bind: JID set to: controller@localhost/2bfbfffa-c9c5-426e-bee0-6ea5ea8c4684
+2026-03-18 04:42:14,264 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,366 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,467 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,569 INFO spade.Agent: Agent controller@localhost connected and authenticated.
+2026-03-18 04:42:14,569 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,670 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,770 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,871 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:14,971 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,072 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,172 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,273 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,373 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,473 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,574 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,674 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,775 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,875 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:15,976 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,076 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,177 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,277 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,378 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,479 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,579 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,680 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,780 INFO ControllerAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 04:42:16,780 INFO ControllerAgent: [Demo] All 4 agents online. Sending patient scenarios...
+2026-03-18 04:42:16,781 INFO ControllerAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 04:42:16,781 INFO ControllerAgent: [Controller] ─── Registering patient P001 ───
+2026-03-18 04:42:16,781 INFO ControllerAgent: [Controller] ─── Registering patient P002 ───
+2026-03-18 04:42:16,781 INFO ControllerAgent: [Controller] ─── Registering patient P003 ───
+2026-03-18 04:42:16,781 INFO ControllerAgent: [Controller] ─── Registering patient P004 ───
+2026-03-18 04:42:16,781 INFO ControllerAgent: [Controller] ─── Registering patient P005 ───
+2026-03-18 04:42:16,781 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,882 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:16,982 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 04:42:17,083 INFO ControllerAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 04:42:17,083 INFO ControllerAgent: [Interactive] You can now admit new patients interactively.
+2026-03-18 04:42:17,083 INFO ControllerAgent: Type 'exit' as patient ID to finish and see the summary.
+2026-03-18 04:42:17,083 INFO ControllerAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 04:44:43,737 ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-126' coro=<CyclicBehaviour._start() done, defined at /home/codespace/.python/current/lib/python3.12/site-packages/spade/behaviour.py:126> exception=SystemExit(1)>
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 476, in uvloop.loop.Loop._on_idle
+  File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+  File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/spade/behaviour.py", line 140, in _start
+    await self._step()
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/spade/behaviour.py", line 285, in _step
+    await self._run()
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/spade/behaviour.py", line 274, in _run
+    await self.run()
+  File "/workspaces/smart_hospital_triage_agent_system/main.py", line 67, in run
+    4:"\033[32m",5:"\033[37m"}
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/server.py", line 152, in raise_exit
+    raise SystemExit(1)
+SystemExit: 1
+2026-03-18 04:44:43,740 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
