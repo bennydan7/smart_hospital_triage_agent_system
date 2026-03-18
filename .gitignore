@@ -1,0 +1,14 @@
+Python-3.11.8.tgz
+*.pyc
+# Python cache files
+__pycache__/
+*.pyc
+
+# Log files
+system.log
+# Global .gitignore for smart_hospital_triage_agent_system
+Python-3.11.8.tgz
+Python-3.11.8/
+venv
+_pycache__
+protocols/_pycache__

@@ -709,3 +709,301 @@ Traceback (most recent call last):
     raise SystemExit(1)
 SystemExit: 1
 2026-03-18 04:44:43,740 INFO MonitorAgent: [MonitorAgent] Type 'update <pid> <hr> <spo2>' to manually update vitals, or 'skip' to continue.
+2026-03-18 11:42:15,377 INFO ManualAdmit: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:42:15,487 INFO ManualAdmit: [Setup] Starting ManualAdmitAgent...
+2026-03-18 11:43:40,696 ERROR SPADE: Exception in the event loop: Error during the connection with the server
+2026-03-18 11:45:35,766 INFO ManualAdmit: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:45:35,766 INFO ManualAdmit: [Setup] Starting ManualAdmitAgent...
+2026-03-18 11:47:00,889 ERROR SPADE: Exception in the event loop: Error during the connection with the server
+2026-03-18 11:53:14,491 INFO SPADE: SPADE XMPP server running on localhost:5222
+2026-03-18 11:53:14,491 INFO ManualAdmit: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:53:14,491 INFO ManualAdmit: [Setup] Starting ManualAdmitAgent...
+2026-03-18 11:53:14,609 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x77e3b8a8e9c0>
+transport: <TCPTransport closed=False reading=False 0x5b3b0d3bc480>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 11:53:15,164 INFO slixmpp.features.feature_bind.bind: JID set to: controller@localhost/7adef103-40b8-4d35-9743-386f4aa05bc0
+2026-03-18 11:53:15,166 INFO spade.Agent: Agent controller@localhost connected and authenticated.
+2026-03-18 11:53:15,166 INFO ManualAdmitAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:53:15,166 INFO ManualAdmitAgent: [Manual] Manual patient admission mode.
+2026-03-18 11:53:15,166 INFO ManualAdmitAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 11:53:45,386 INFO ManualAdmitAgent: [Manual] Patient P100 admitted.
+2026-03-18 11:53:54,839 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:53:57,635 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:53:59,538 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:54:01,409 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:54:03,960 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:54:05,386 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:54:06,307 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:54:07,236 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:57:45,311 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: ''
+2026-03-18 11:57:47,044 INFO ManualAdmitAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:57:47,044 INFO ManualAdmitAgent: [Manual] Manual admission session ended.
+2026-03-18 11:57:47,044 INFO ManualAdmitAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 11:57:47,044 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 11:57:47,046 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 11:57:47,047 INFO spade.Agent: Client disconnected.
+2026-03-18 11:57:47,047 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 11:57:55,346 INFO SPADE: SPADE XMPP server running on localhost:5222
+2026-03-18 11:57:55,346 INFO ManualAdmit: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:57:55,346 INFO ManualAdmit: [Setup] Starting ManualAdmitAgent...
+2026-03-18 11:57:55,426 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7fe98b537a70>
+transport: <TCPTransport closed=False reading=False 0x5c357579eb20>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 11:57:55,975 INFO slixmpp.features.feature_bind.bind: JID set to: controller@localhost/a8107cdc-1e66-4e5f-b6d0-daa4c76ad675
+2026-03-18 11:57:55,977 INFO spade.Agent: Agent controller@localhost connected and authenticated.
+2026-03-18 11:57:55,977 INFO ManualAdmitAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:57:55,977 INFO ManualAdmitAgent: [Manual] Manual patient admission mode.
+2026-03-18 11:57:55,977 INFO ManualAdmitAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 11:58:29,116 ERROR ManualAdmitAgent: [Error] Invalid input: invalid literal for int() with base 10: '8-'
+2026-03-18 11:59:06,179 INFO ManualAdmitAgent: [Manual] Patient p1002 admitted.
+2026-03-18 11:59:06,181 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 11:59:34,000 INFO ManualAdmitAgent: [Manual] Patient p1003 admitted.
+2026-03-18 11:59:36,001 INFO ManualAdmitAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:59:36,001 INFO ManualAdmitAgent: [Manual] Manual admission session ended.
+2026-03-18 11:59:36,001 INFO ManualAdmitAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 11:59:36,002 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 11:59:36,002 INFO spade.Agent: Client disconnected.
+2026-03-18 11:59:36,002 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 11:59:36,002 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 11:59:48,343 INFO SPADE: SPADE XMPP server running on localhost:5222
+2026-03-18 11:59:48,343 INFO ManualAdmit: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:59:48,343 INFO ManualAdmit: [Setup] Starting ManualAdmitAgent...
+2026-03-18 11:59:48,419 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7cc37ea57a70>
+transport: <TCPTransport closed=False reading=False 0x56862f507cf0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 11:59:48,974 INFO slixmpp.features.feature_bind.bind: JID set to: controller@localhost/9b6e7e31-fa36-4114-b583-058cdfeede65
+2026-03-18 11:59:48,976 INFO spade.Agent: Agent controller@localhost connected and authenticated.
+2026-03-18 11:59:48,976 INFO ManualAdmitAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 11:59:48,976 INFO ManualAdmitAgent: [Manual] Manual patient admission mode.
+2026-03-18 11:59:48,976 INFO ManualAdmitAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 12:00:23,663 INFO ManualAdmitAgent: [Manual] Patient p1006 admitted.
+2026-03-18 12:00:25,664 INFO ManualAdmitAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 12:00:25,664 INFO ManualAdmitAgent: [Manual] Manual admission session ended.
+2026-03-18 12:00:25,664 INFO ManualAdmitAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 12:00:25,665 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 12:00:25,666 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 12:00:25,666 INFO spade.Agent: Client disconnected.
+2026-03-18 12:00:25,666 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 12:25:57,212 INFO SPADE: SPADE XMPP server running on localhost:5222
+2026-03-18 12:25:57,396 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7dfc8fef33e0>
+transport: <TCPTransport closed=False reading=False 0x561f4a7ae480>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 12:25:57,940 INFO slixmpp.features.feature_bind.bind: JID set to: resource@localhost/3cd1dd14-f65d-4f88-ba72-959d0e639931
+2026-03-18 12:25:57,942 INFO spade.Agent: Agent resource@localhost connected and authenticated.
+2026-03-18 12:25:58,000 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7dfc92347140>
+transport: <TCPTransport closed=False reading=False 0x561f4a97d060>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 12:25:58,558 INFO slixmpp.features.feature_bind.bind: JID set to: notification@localhost/e538d36a-1891-4ffc-a0c4-cb241a4a85a4
+2026-03-18 12:25:58,559 INFO spade.Agent: Agent notification@localhost connected and authenticated.
+2026-03-18 12:25:58,619 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7dfc923a7770>
+transport: <TCPTransport closed=False reading=False 0x561f4aae8ab0>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 12:25:59,153 INFO slixmpp.features.feature_bind.bind: JID set to: monitor@localhost/965b7da8-9419-45d7-ba6e-ed3af00b11b6
+2026-03-18 12:25:59,154 INFO spade.Agent: Agent monitor@localhost connected and authenticated.
+2026-03-18 12:25:59,215 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7dfc8fd95400>
+transport: <TCPTransport closed=False reading=False 0x561f4ac50350>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 12:25:59,753 INFO slixmpp.features.feature_bind.bind: JID set to: triage@localhost/fa44543b-c6e9-46cd-ae1a-ef075bacf7fb
+2026-03-18 12:25:59,754 INFO spade.Agent: Agent triage@localhost connected and authenticated.
+2026-03-18 12:25:59,814 ERROR asyncio: Fatal error on transport TCPTransport
+protocol: <pyjabber.network.XMLProtocol.XMLProtocol object at 0x7dfc8fdcf5f0>
+transport: <TCPTransport closed=False reading=False 0x561f4adbf120>
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 211, in feed
+    self._parser.Parse(data, isFinal)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 841, in uvloop.loop.__uv_stream_on_read_impl
+  File "uvloop/loop.pyx", line 109, in uvloop.loop.run_in_context1
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pyjabber/network/XMLProtocol.py", line 157, in data_received
+    self._xml_parser.feed(data)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/expatreader.py", line 215, in feed
+    self._err_handler.fatalError(exc)
+  File "/home/codespace/.python/current/lib/python3.12/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:0: not well-formed (invalid token)
+2026-03-18 12:26:00,341 INFO slixmpp.features.feature_bind.bind: JID set to: controller@localhost/06d63793-1440-42f5-97f0-214172c1c578
+2026-03-18 12:26:00,342 INFO spade.Agent: Agent controller@localhost connected and authenticated.
+2026-03-18 12:26:00,342 INFO ManualAdmitAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 12:26:00,342 INFO ManualAdmitAgent: [Manual] Manual patient admission mode.
+2026-03-18 12:26:00,342 INFO ManualAdmitAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 12:26:33,551 INFO ManualAdmitAgent: [Manual] Patient p101 admitted.
+2026-03-18 12:26:35,552 INFO ManualAdmitAgent: 
+────────────────────────────────────────────────────────────────
+2026-03-18 12:26:35,552 INFO ManualAdmitAgent: [Manual] Manual admission session ended.
+2026-03-18 12:26:35,552 INFO ManualAdmitAgent: ────────────────────────────────────────────────────────────────
+
+2026-03-18 12:26:35,553 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 12:26:35,554 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 12:26:35,554 INFO spade.Agent: Client disconnected.
+2026-03-18 12:26:35,554 INFO spade.behaviour: Killing behavior OneShotBehaviour/ManualAdmitBehaviour with exit code: None
+2026-03-18 12:26:36,554 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceivePatientBehaviour with exit code: None
+2026-03-18 12:26:36,554 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveBedConfirmBehaviour with exit code: None
+2026-03-18 12:26:36,554 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveDeteriorationBehaviour with exit code: None
+2026-03-18 12:26:36,555 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 12:26:36,556 INFO spade.Agent: Client disconnected.
+2026-03-18 12:26:36,556 INFO spade.behaviour: Killing behavior CyclicBehaviour/BedAllocationBehaviour with exit code: None
+2026-03-18 12:26:36,557 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 12:26:36,557 INFO spade.Agent: Client disconnected.
+2026-03-18 12:26:36,557 INFO spade.behaviour: Killing behavior CyclicBehaviour/AlertBehaviour with exit code: None
+2026-03-18 12:26:36,558 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 12:26:36,558 INFO spade.Agent: Client disconnected.
+2026-03-18 12:26:36,558 INFO spade.behaviour: Killing behavior CyclicBehaviour/SubscribeBehaviour with exit code: None
+2026-03-18 12:26:36,558 INFO spade.behaviour: Killing behavior PeriodicBehaviour/CheckVitalsBehaviour with exit code: None
+2026-03-18 12:26:36,559 INFO slixmpp.xmlstream.xmlstream: connection_lost: (None,)
+2026-03-18 12:26:36,559 INFO spade.Agent: Client disconnected.
+2026-03-18 12:26:36,560 INFO spade.behaviour: Killing behavior CyclicBehaviour/BedAllocationBehaviour with exit code: None
+2026-03-18 12:26:36,560 INFO spade.behaviour: Killing behavior CyclicBehaviour/AlertBehaviour with exit code: None
+2026-03-18 12:26:36,560 INFO spade.behaviour: Killing behavior CyclicBehaviour/SubscribeBehaviour with exit code: None
+2026-03-18 12:26:36,561 INFO spade.behaviour: Killing behavior PeriodicBehaviour/CheckVitalsBehaviour with exit code: None
+2026-03-18 12:26:36,561 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceivePatientBehaviour with exit code: None
+2026-03-18 12:26:36,561 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveBedConfirmBehaviour with exit code: None
+2026-03-18 12:26:36,562 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveDeteriorationBehaviour with exit code: None
+2026-03-18 12:26:36,563 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveBedConfirmBehaviour with exit code: None
+2026-03-18 12:26:36,563 INFO spade.behaviour: Killing behavior PeriodicBehaviour/CheckVitalsBehaviour with exit code: None
+2026-03-18 12:26:36,564 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceiveDeteriorationBehaviour with exit code: None
+2026-03-18 12:26:36,564 INFO spade.behaviour: Killing behavior CyclicBehaviour/SubscribeBehaviour with exit code: None
+2026-03-18 12:26:36,564 INFO spade.behaviour: Killing behavior CyclicBehaviour/AlertBehaviour with exit code: None
+2026-03-18 12:26:36,564 INFO spade.behaviour: Killing behavior CyclicBehaviour/BedAllocationBehaviour with exit code: None
+2026-03-18 12:26:36,565 INFO spade.behaviour: Killing behavior CyclicBehaviour/ReceivePatientBehaviour with exit code: None

@@ -28,7 +28,13 @@ class ManualAdmitAgent(Agent):
             self.agent.logger.info(f"\n{SEP}")
             self.agent.logger.info("[Manual] Manual patient admission mode.")
             self.agent.logger.info(f"{SEP}\n")
-            while True:
+            try:
+                batch_count = input("How many patients do you want to admit? (default 1): ").strip()
+                batch_count = int(batch_count) if batch_count.isdigit() and int(batch_count) > 0 else 1
+            except Exception:
+                batch_count = 1
+            for i in range(batch_count):
+                print(f"\n--- Patient {i+1} ---")
                 pid = input("Enter patient ID (or 'exit'): ").strip()
                 if pid.lower() == 'exit':
                     break
@@ -64,13 +70,68 @@ class ManualAdmitAgent(Agent):
         self.add_behaviour(self.ManualAdmitBehaviour())
 
 async def main():
-    logger = get_logger("ManualAdmit")
-    logger.info(f"\n{SEP}")
-    logger.info("[Setup] Starting ManualAdmitAgent...")
-    agent = ManualAdmitAgent(f"controller@{XMPP_SERVER}", PASSWORD)
-    await agent.start(auto_register=True)
-    await spade.wait_until_finished(agent)
-    await agent.stop()
+    print("""
+╔══════════════════════════════════════════════════════════════╗
+║      SMART HOSPITAL TRIAGE AGENT SYSTEM                     ║
+║      DCIT 403 — Intelligent Agent Systems — KNUST           ║
+║      Designed using Prometheus AOSE Methodology             ║
+╚══════════════════════════════════════════════════════════════╝""")
+    print(f"\n{SEP}")
+    print("[Setup] Initialising EMR database...")
+    from environment.emr import init_db, get_triage_summary
+    init_db()
+    print("[Setup] Starting agents...\n")
+
+    from agents.triage_agent import TriageAgent
+    from agents.resource_agent import ResourceAgent
+    from agents.notification_agent import NotificationAgent
+    from agents.monitor_agent import MonitorAgent
+
+    resource_agent     = ResourceAgent    (f"resource@{XMPP_SERVER}",     PASSWORD)
+    notification_agent = NotificationAgent(f"notification@{XMPP_SERVER}", PASSWORD)
+    monitor_agent      = MonitorAgent     (f"monitor@{XMPP_SERVER}",      PASSWORD)
+    triage_agent       = TriageAgent      (f"triage@{XMPP_SERVER}",       PASSWORD)
+    manual_agent       = ManualAdmitAgent (f"controller@{XMPP_SERVER}",   PASSWORD)
+
+    await resource_agent.start(auto_register=True)
+    await notification_agent.start(auto_register=True)
+    await monitor_agent.start(auto_register=True)
+    await triage_agent.start(auto_register=True)
+    await manual_agent.start(auto_register=True)
+
+    await spade.wait_until_finished(manual_agent)
+
+    await triage_agent.stop()
+    await resource_agent.stop()
+    await notification_agent.stop()
+    await monitor_agent.stop()
+
+    # Print triage summary
+    print(f"\n{SEP}")
+    print("FINAL TRIAGE SUMMARY — EMR LOG")
+    print(f"{SEP}")
+    esi_col = {1:"\033[91m",2:"\033[31m",3:"\033[33m",4:"\033[32m",5:"\033[37m"}
+    rst = "\033[0m"
+    rows = get_triage_summary()
+    if rows:
+        print(f"{'Patient':<10} {'ESI':<6} {'Ward':<10} {'Bed':<12} Escalated")
+        print("─" * 52)
+        for row in rows:
+            pid, esi, ward, bed, ts, esc = row
+            c = esi_col.get(esi, "")
+            e = f"\033[91mYES ⚠{rst}" if esc else "No"
+            print(f"{pid:<10} {c}ESI-{esi}{rst}      {str(ward):<10} {str(bed):<12} {e}")
+    else:
+        print("  (No records yet)")
+
+    print(f"\n{SEP}")
+    print("Prometheus artifacts demonstrated:")
+    print("  ✓ Phase 1 — Percepts (vitals) + Actions (bed alloc, alerts)")
+    print("  ✓ Phase 2 — 4 agents communicating via FIPA-ACL messages")
+    print("  ✓ Phase 2 — Acquaintance: Triage↔Resource↔Monitor↔Notif")
+    print("  ✓ Phase 3 — Percept→Decide→Act loop in TriageAgent output")
+    print("  ✓ Phase 3 — Belief revision via MonitorAgent deterioration")
+    print(f"{SEP}\n")
 
 if __name__ == "__main__":
-    spade.run(main(), embedded_xmpp_server=False)
+    spade.run(main(), embedded_xmpp_server=True)
